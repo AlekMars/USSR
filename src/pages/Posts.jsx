@@ -7,10 +7,12 @@ import usePagination from "../hooks/usePagination";
 import Pagination from "../components/Pagination";
 
 function Posts ({data})  {
-    const {visiblePosts, user, PATH} = useContext(Ctx);
+    const {visiblePosts, user, PATH, posts} = useContext(Ctx);
     const [sortPosts, setSortPosts] = useState(visiblePosts);
     const paginate = usePagination(sortPosts, 12);
     const [btnType, setBtnType] = useState("");
+    const [searchData, setSearchData] = useState(posts);
+    console.log(searchData);
     let st = {
         display: "flex",
         gap: "10px"

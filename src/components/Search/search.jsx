@@ -10,6 +10,7 @@ export default () => {
     const {posts, setVisiblePosts, PATH} = useContext(Ctx);
     const [text, updateText] = useState("");
     const [searchData, setSearchData] = useState(posts);
+   
     const clearSearch = () => {
         updateText("");
         setSearchData(posts);

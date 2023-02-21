@@ -1,6 +1,6 @@
 .card {
     box-shadow: 0 0 5px #2226;
-    border-radius: 1em;
+    border-radius: 20px;
     padding: 1em;
     box-sizing: border-box;
     display: flex;
@@ -12,6 +12,7 @@
     text-align: center;
     overflow-y:scroll;
     max-height:400px;
+    background-color: #e7cebb;
 }
 .card__heart {
     position: absolute;
