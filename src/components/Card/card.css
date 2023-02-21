@@ -10,6 +10,8 @@
     align-items: flex-start;
     height: 100%;
     text-align: center;
+    overflow-y:scroll;
+    max-height:400px;
 }
 .card__heart {
     position: absolute;

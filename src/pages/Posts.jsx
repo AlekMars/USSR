@@ -78,7 +78,7 @@ function Posts ({data})  {
         {!user && 
             <div className="empty-block">
                 <EmojiFrown/>
-                <p>Простите, у вас нет доступа к товарам без авторизации</p>
+                <p>Простите, нет возможности просматривать каталог без авторизации</p>
                 <Link to={PATH} className="btn">На главную</Link>
             </div>
             

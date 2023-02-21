@@ -1,8 +1,14 @@
 body {
+    
     margin: 0;
     font-family: sans-serif;
     color:rgb(66, 62, 8);
 }
+    
+
+   
+
+
 a {
     text-decoration: none;
     color: inherit;
@@ -23,6 +29,7 @@ a:hover {
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
     align-items: stretch;
+    min-height: 250px;
 }
 @media (max-width: 1260px) {
     .wrapper>* {
@@ -31,6 +38,7 @@ a:hover {
     .cards {
         grid-template-columns: repeat(3, 1fr);
     }
+    
 }
 
 .empty-block {
@@ -82,5 +90,21 @@ a:hover {
 }
 .btn.sort {
     background-color: #222; 
-    color: orange;
+    color: rgb(180, 123, 17);
 }
+.mySwiper {
+    max-width: 400px;
+  
+    
+    
+}
+.swiperWrapper {
+    position: fixed;
+    padding: auto;
+
+  height:  300px;
+
+
+ 
+}
+

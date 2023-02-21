@@ -35,7 +35,7 @@ export default function Post ({}) {
             })
     }
     return <>
-    <Link to={PATH + "posts"}>Назад</Link>
+    <Link to={PATH + "posts"}><button className="btn">Назад</button></Link>
         {message && message.author && message.author._id === user._id && <button 
             onClick={remove} 
             className="btn" 
@@ -43,7 +43,7 @@ export default function Post ({}) {
         >
             <Trash3/>
         </button>}
-        <h1>{message.title || "Страница товара"}</h1>
+        <h1>{message.title || "Страница для Вашего поста"}</h1>
         {/* <p>Автор: {message.author.name}</p> */}
         <img
             src={message.image}
