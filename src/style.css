@@ -4,10 +4,8 @@ body {
     font-family: sans-serif;
     color:rgb(66, 62, 8);
 }
-    
 
-   
-
+ 
 
 a {
     text-decoration: none;
@@ -17,6 +15,7 @@ a:hover {
     color: inherit;
 }
 .wrapper {
+    position: relative;
     min-height: 100vh;
     display: grid;
     grid-template-rows: 100px auto 50px;
@@ -34,6 +33,9 @@ a:hover {
 @media (max-width: 1260px) {
     .wrapper>* {
         padding: 0 30px;
+    }
+    .mySwiper {
+        margin-left: 30px;
     }
     .cards {
         grid-template-columns: repeat(3, 1fr);
@@ -97,14 +99,5 @@ a:hover {
   
     
     
-}
-.swiperWrapper {
-    position: fixed;
-    padding: auto;
-
-  height:  300px;
-
-
- 
 }
 

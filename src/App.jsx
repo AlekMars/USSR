@@ -8,11 +8,13 @@ import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
 import Modal from "./components/Modal";
 
+
 import Home from "./pages/Home.jsx";
 import Posts from "./pages/Posts.jsx";
 import Profile from "./pages/Profile";
 import AddPost from "./pages/AddPost";
 import Favorites from "./pages/Favorites";
+import Layot from "./components/Layot/layot"
 
 import {Api} from "./Api";
 import Ctx from "./Ctx";
@@ -95,9 +97,15 @@ const App = () => {
             setFavorites: setFavorites,
             PATH: PATH,
         }}>
+            
             <div className="wrapper">
+    
                 <Header/>
+                
+                
+                
                 <main className="py-4">
+                <Layot/>
                     <Routes>
                         <Route path={PATH} element={<Home />}/>
                         <Route path={PATH + "posts"} element={<Posts />}/>
@@ -108,8 +116,10 @@ const App = () => {
                     </Routes>
                     
                 </main>
+                
                 <Footer/>
             </div>
+            
             <Modal/>
         </Ctx.Provider>
     )

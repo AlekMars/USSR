@@ -19,7 +19,7 @@ export default ({data}) => {
    console.log(visiblePosts);
     return <>
     
-     <div className="wrapp">
+     {/* <div className="wrapp"> */}
         <Swiper
         grabCursor={true}
         effect={"creative"}
@@ -47,7 +47,7 @@ export default ({data}) => {
         
       </Swiper>
     
-      </div>
+      {/* </div> */}
     </>
 }
 
