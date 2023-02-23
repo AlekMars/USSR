@@ -53,6 +53,7 @@ function Posts ({data})  {
             setSortPosts(visiblePosts);
         }
     }, [visiblePosts]); 
+    console.log(posts);
     return <>
         {user && <>
             {visiblePosts.length > 0 
